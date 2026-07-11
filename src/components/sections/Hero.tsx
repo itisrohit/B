@@ -71,7 +71,7 @@ export function Hero({
         />
       </div>
 
-      {/* Loading Card - Top Left (reaches Sakura Layer 1) */}
+      {/* Centered Loading Card */}
       <div className="absolute z-20 top-5 left-16 sm:top-10 sm:left-28 md:top-14 md:left-40 w-[90%] max-w-[180px] sm:max-w-[270px] md:max-w-[360px] h-[145px] sm:h-[225px] md:h-[300px] pointer-events-none select-none">
         <Image
           src="/assets/decorations/loading/loading-card-v1.webp"
@@ -80,6 +80,21 @@ export function Hero({
           priority
           sizes="(max-width: 640px) 90vw, (max-width: 768px) 270px, 360px"
           className="object-contain filter drop-shadow-xl"
+        />
+      </div>
+
+      {/* Hero Photo Cluster (Scrapbook spread right side) */}
+      <div
+        className="absolute z-20 top-0 -right-8 sm:top-1 sm:-right-12 md:top-2 md:-right-16 w-[299px] h-[351px] sm:w-[522px] sm:h-[535px] md:w-[745px] md:h-[765px] pointer-events-none select-none"
+        style={{ transformOrigin: "top right", transform: "scale(0.88) scaleY(1.1) scaleX(0.95)" }}
+      >
+        <Image
+          src="/assets/decorations/photos/hero-photo-cluster-v1.webp"
+          alt="Hero Photo Cluster"
+          fill
+          priority
+          sizes="(max-width: 640px) 299px, (max-width: 768px) 522px, 745px"
+          className="object-contain rotate-[5deg]"
         />
       </div>
 
