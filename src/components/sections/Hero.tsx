@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { slideUp, fadeIn } from "@/animations/framer";
@@ -33,6 +34,19 @@ export function Hero({
         className
       )}
     >
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0 select-none pointer-events-none">
+        <Image
+          src="/assets/backgrounds/hero/hero-bg-v1.webp"
+          alt="Scrapbook background"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover"
+        />
+        {/* Semi-transparent mask overlay for text readability */}
+        <div className="absolute inset-0 bg-white/60 dark:bg-zinc-950/70" />
+      </div>
       {/* Decorative floating stickers & graphics as visual samples */}
       <FloatingDecoration top="15%" left="10%" floatY={15} duration={4.5}>
         <Flower size={56} color="fill-pink-400" animate="spin" />
