@@ -22,20 +22,6 @@ export default function Home() {
       {/* Visual background texture overlay representing grid scrap paper */}
       <div className="absolute inset-0 bg-[radial-gradient(rgba(0,0,0,0.015)_1px,transparent_1px)] dark:bg-[radial-gradient(rgba(255,255,255,0.01)_1px,transparent_1px)] bg-[size:20px_20px] pointer-events-none" />
 
-      {/* Header Stamp bar */}
-      <header className="py-4 px-6 border-b border-zinc-200/50 dark:border-zinc-800/50 flex justify-between items-center z-10 bg-white/50 dark:bg-zinc-950/50 backdrop-blur-xs">
-        <div className="flex items-center gap-2">
-          <Sticker emoji="⭐" variant="star" rotation={-5} className="p-1 text-sm shrink-0 border-2" />
-          <span className="font-mono text-[10px] sm:text-xs font-black uppercase tracking-widest text-text-primary">
-            SCRAPBOOK_v1.0.0
-          </span>
-        </div>
-        <div className="flex items-center gap-2 font-mono text-[9px] sm:text-[10px] text-zinc-400">
-          <span>STATUS: SCAFFOLD</span>
-          <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" />
-        </div>
-      </header>
-
       {/* Main content elements */}
       <main className="flex-grow flex flex-col w-full relative">
         
