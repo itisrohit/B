@@ -19,7 +19,7 @@ export function Hero({
     <section
       id={id}
       className={cn(
-        "relative min-h-[90vh] flex flex-col items-center justify-center px-4 overflow-hidden border-b border-zinc-200/50 dark:border-zinc-800/50",
+        "relative min-h-screen w-full flex flex-col items-center justify-center px-4 overflow-hidden",
         className
       )}
     >
@@ -33,8 +33,6 @@ export function Hero({
           sizes="100vw"
           className="object-cover"
         />
-        {/* Semi-transparent mask overlay for text readability */}
-        <div className="absolute inset-0 bg-white/60 dark:bg-zinc-950/70" />
       </div>
 
       {/* Children elements (Custom built in Chapter 1) */}
