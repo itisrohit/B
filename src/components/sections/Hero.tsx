@@ -72,21 +72,21 @@ export function Hero({
       </div>
 
       {/* Centered Loading Card */}
-      <div className="absolute z-20 top-5 left-16 sm:top-10 sm:left-28 md:top-14 md:left-40 w-[90%] max-w-[180px] sm:max-w-[270px] md:max-w-[360px] h-[145px] sm:h-[225px] md:h-[300px] pointer-events-none select-none">
+      <div className="absolute z-20 top-5 left-16 sm:top-10 sm:left-28 md:top-14 md:left-40 w-[90%] max-w-[160px] sm:max-w-[240px] md:max-w-[320px] h-[145px] sm:h-[225px] md:h-[300px] pointer-events-none select-none">
         <Image
           src="/assets/decorations/loading/loading-card-v1.webp"
           alt="Welcome Loading Card"
           fill
           priority
           sizes="(max-width: 640px) 90vw, (max-width: 768px) 270px, 360px"
-          className="object-contain filter drop-shadow-xl"
+          className="object-contain filter drop-shadow-lg"
         />
       </div>
 
       {/* Hero Photo Cluster (Scrapbook spread right side) */}
       <div
         className="absolute z-20 top-0 -right-8 sm:top-1 sm:-right-12 md:top-2 md:-right-16 w-[299px] h-[351px] sm:w-[522px] sm:h-[535px] md:w-[745px] md:h-[765px] pointer-events-none select-none"
-        style={{ transformOrigin: "top right", transform: "scale(0.88) scaleY(1.1) scaleX(0.95)" }}
+        style={{ transformOrigin: "top right", transform: "scale(0.77) scaleY(1.1) scaleX(0.95)" }}
       >
         <Image
           src="/assets/decorations/photos/hero-photo-cluster-v1.webp"
@@ -95,6 +95,21 @@ export function Hero({
           priority
           sizes="(max-width: 640px) 299px, (max-width: 768px) 522px, 745px"
           className="object-contain rotate-[5deg]"
+        />
+      </div>
+
+      {/* Pixel Character - Girl (Bottom Left) */}
+      <div
+        className="absolute z-20 -bottom-4 -left-2 sm:-bottom-5 sm:-left-4 md:-bottom-6 md:-left-6 w-[120px] h-[103px] sm:w-[200px] sm:h-[172px] md:w-[280px] md:h-[241px] pointer-events-none select-none"
+        style={{ transformOrigin: "bottom left", transform: "scale(2.1)" }}
+      >
+        <Image
+          src="/assets/pixel/girl-pixel-v1.webp"
+          alt="Girl pixel character decoration"
+          fill
+          priority
+          sizes="(max-width: 640px) 120px, (max-width: 768px) 200px, 280px"
+          className="object-contain"
         />
       </div>
 
