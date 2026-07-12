@@ -113,6 +113,18 @@ export function Hero({
         />
       </div>
 
+      {/* Ground Doodle (Bottom Right) */}
+      <div className="absolute z-10 -bottom-[7.5rem] -right-[1.25rem] sm:-bottom-[7.5rem] sm:-right-[1.5rem] md:-bottom-[9.5rem] md:-right-[2rem] w-[360px] h-[240px] sm:w-[600px] sm:h-[400px] md:w-[840px] md:h-[560px] pointer-events-none select-none">
+        <Image
+          src="/assets/decorations/doodles/ground-doodle-v1.webp"
+          alt="Ground doodle decoration"
+          fill
+          priority
+          sizes="(max-width: 640px) 180px, (max-width: 768px) 300px, 420px"
+          className="object-contain object-right-bottom"
+        />
+      </div>
+
       {/* Children elements (Custom built in Chapter 1) */}
       <div className="absolute z-30 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%] max-w-2xl text-center select-text">
         {children}
