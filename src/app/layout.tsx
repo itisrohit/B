@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Silkscreen, Patrick_Hand } from "next/font/google";
 import { SmoothScrollProvider } from "@/components/scrapbook/SmoothScrollProvider";
 import "./globals.css";
 
@@ -11,6 +11,20 @@ const geistSans = Geist({
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
+  subsets: ["latin"],
+  display: "swap",
+});
+
+const silkscreen = Silkscreen({
+  weight: ["400", "700"],
+  variable: "--font-silkscreen",
+  subsets: ["latin"],
+  display: "swap",
+});
+
+const patrickHand = Patrick_Hand({
+  weight: "400",
+  variable: "--font-patrick-hand",
   subsets: ["latin"],
   display: "swap",
 });
@@ -36,7 +50,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} bg-bg-primary text-text-primary antialiased selection:bg-pink-200 selection:text-pink-900`}
+        className={`${geistSans.variable} ${geistMono.variable} ${silkscreen.variable} ${patrickHand.variable} bg-bg-primary text-text-primary antialiased selection:bg-pink-200 selection:text-pink-900`}
       >
         <SmoothScrollProvider>
           {children}

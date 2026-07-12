@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import "../styles/variables.css";
+@import url("https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=Patrick+Hand&display=swap");
 
 @theme {
   --color-bg-primary: var(--bg-primary);
@@ -43,12 +44,6 @@
   --color-text-muted: var(--text-muted);
   --color-text-inverse: var(--text-inverse);
 
-  --spacing-xs: var(--spacing-xs);
-  --spacing-sm: var(--spacing-sm);
-  --spacing-md: var(--spacing-md);
-  --spacing-lg: var(--spacing-lg);
-  --spacing-xl: var(--spacing-xl);
-  --spacing-2xl: var(--spacing-2xl);
 
   --radius-xs: var(--radius-xs);
   --radius-sm: var(--radius-sm);
@@ -74,6 +69,8 @@
 
   --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui;
   --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular;
+  --font-silkscreen: "Silkscreen", cursive;
+  --font-patrick-hand: "Patrick Hand", cursive;
 }
 
 body {

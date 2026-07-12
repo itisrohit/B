@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { Hero } from "@/components/sections/Hero";
 import { StorySection } from "@/components/sections/StorySection";
@@ -26,7 +28,19 @@ export default function Home() {
       <main className="flex-grow flex flex-col w-full relative">
         
         {/* 1. HERO SECTION */}
-        <Hero id="hero" />
+        <Hero id="hero">
+          {/* Main Heading */}
+          <h1 className="font-silkscreen font-normal tracking-[0.04em] leading-[0.9] text-center w-full select-text">
+            <div className="text-[#181818] text-[32px] sm:text-[54px] md:text-[80px] lg:text-[108px]">FOR MY</div>
+            <div className="text-[#F56E9C] text-[32px] sm:text-[54px] md:text-[80px] lg:text-[108px] mt-[8px]">FAVORITE</div>
+            <div className="text-[#181818] text-[32px] sm:text-[54px] md:text-[80px] lg:text-[108px] mt-[8px]">HUMAN</div>
+          </h1>
+
+          {/* Subtitle */}
+          <p className="font-patrick-hand text-[#2D2D2D] text-[20px] md:text-[28px] leading-[1.35] text-center mt-[32px] w-full select-text">
+            thank you for being the<br />prettiest part of my days
+          </p>
+        </Hero>
 
         {/* 2. STORY SECTION */}
         <StorySection id="story" events={storyEvents} />

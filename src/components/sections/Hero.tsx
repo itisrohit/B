@@ -36,13 +36,13 @@ export function Hero({
       </div>
 
       {/* Sliced Sakura Branch Left - Layer 1 (Main branch body: Top Left) */}
-      <div className="absolute top-0 -left-4 z-10 w-[158px] h-[81px] sm:w-[297px] sm:h-[146px] md:w-[416px] md:h-[204px] lg:w-[535px] lg:h-[261px] pointer-events-none select-none">
+      <div className="absolute top-0 -left-4 z-10 w-[174px] h-[89px] sm:w-[327px] sm:h-[161px] md:w-[458px] md:h-[224px] lg:w-[589px] lg:h-[287px] pointer-events-none select-none">
         <Image
           src="/assets/decorations/flowers/sakura-branch-left-1.webp"
           alt="Sakura branch main left"
           fill
           priority
-          sizes="(max-width: 640px) 158px, (max-width: 768px) 297px, (max-width: 1024px) 416px, 535px"
+          sizes="(max-width: 640px) 174px, (max-width: 768px) 327px, (max-width: 1024px) 458px, 589px"
           className="object-contain object-left-top rotate-[4deg]"
         />
       </div>
@@ -114,7 +114,7 @@ export function Hero({
       </div>
 
       {/* Children elements (Custom built in Chapter 1) */}
-      <div className="relative z-10 w-full max-w-6xl mx-auto flex flex-col items-center">
+      <div className="absolute z-30 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%] max-w-2xl text-center select-text">
         {children}
       </div>
     </section>
